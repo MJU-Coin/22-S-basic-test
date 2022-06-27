@@ -1,0 +1,56 @@
+.body {
+  display: flex;
+}
+
+.head {
+  width: 80%;
+  height: 10vh;
+  margin-top: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.head .Logo_Wrapper {
+  width: 20vh;
+  height: 70%;
+  background-image: url(/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.head .Logo_Wrapper:hover {
+  cursor: pointer;
+}
+
+.head .Status_Wrapper {
+  width: 45vh;
+  height: 70%;
+  display: flex;
+  margin-left: auto;
+}
+
+.head .Status_Wrapper .Add_Project {
+  height: 80%;
+  background-color: white;
+  border-style: none;
+  margin-right: 15px;
+  font-weight: 650;
+}
+
+.head .Status_Wrapper .Add_Project:hover {
+  cursor: pointer;
+}
+
+.head .Status_Wrapper .User_Status {
+  width: 150px;
+  height: 80%;
+  background-color: white;
+  border: 1px solid rgb(207, 206, 206);
+  border-radius: 5px;
+}
+
+.head .Status_Wrapper .User_Status:hover {
+  cursor: pointer;
+}

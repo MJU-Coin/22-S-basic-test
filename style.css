@@ -1,12 +1,12 @@
 .body {
   display: flex;
+  flex-flow: row;
 }
 
 .head {
-  width: 80%;
-  height: 10vh;
-  margin-top: 20px;
-  margin: auto;
+  width: 70%;
+  height: 6vh;
+  margin: 10px auto;
   display: flex;
   align-items: center;
 }
@@ -25,14 +25,14 @@
 }
 
 .head .Status_Wrapper {
-  width: 45vh;
+  width: 30vh;
   height: 70%;
   display: flex;
   margin-left: auto;
 }
 
 .head .Status_Wrapper .Add_Project {
-  height: 80%;
+  height: 90%;
   background-color: white;
   border-style: none;
   margin-right: 15px;
@@ -44,13 +44,60 @@
 }
 
 .head .Status_Wrapper .User_Status {
-  width: 150px;
-  height: 80%;
+
+  width: 140px;
+  height: 90%;
   background-color: white;
   border: 1px solid rgb(207, 206, 206);
   border-radius: 5px;
 }
 
+#user_icon {
+  padding-top: 4px;
+  color: white;
+  width: 23px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(222, 221, 221);
+  margin-right: 5px;
+}
+
 .head .Status_Wrapper .User_Status:hover {
   cursor: pointer;
+}
+
+.Navigation {
+  width: 70%;
+  height: 4vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+
+.Navigation .Navigation_list {
+  padding-left: 0;
+}
+
+.Navigation .Navigation_list>li {
+  height: 80%;
+  display: inline;
+  list-style: none;
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.Navigation .Navigation_list>li:hover {
+  cursor: pointer;
+  color: rgb(236, 86, 22);
+}
+
+.Navigation .Navigation_Search {
+  width: 200px;
+  height: 80%;
+  background-color: rgb(247, 246, 246);
+  border-style: none;
+  border-radius: 5px;
+  margin-left: auto;
+  outline: none;
 }

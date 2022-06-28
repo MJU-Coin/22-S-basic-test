@@ -8,37 +8,65 @@
   <title>텀블벅 - 크리에터를 위한 크라우드펀딩</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="tumblbug_practice.js"></script>
   <script src="https://kit.fontawesome.com/cf416b0d1e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="head">
-    <div class="Logo_Wrapper">
+  <header>
+    <div class="head">
+      <div class="Logo_Wrapper">
 
+      </div>
+      <div class="Status_Wrapper">
+        <button class="Add_Project">프로젝트 올리기</button>
+        <button class="User_Status">
+          <i class="fa-solid fa-user" id="user_icon"></i>
+          로그인/회원가입
+        </button>
+      </div>
     </div>
-    <div class="Status_Wrapper">
-      <button class="Add_Project">프로젝트 올리기</button>
-      <button class="User_Status">
-        <i class="fa-solid fa-user" id="user_icon"></i>
-        로그인/회원가입
-      </button>
+
+    <nav class="Navigation">
+      <ul class="Navigation_list">
+        <li id="category_list"><i class="fa-solid fa-bars"></i> &nbsp; 카테고리</li>
+        <li>홈</li>
+        <li>인기</li>
+        <li>신규</li>
+        <li>마감임박</li>
+        <li>공개예정</li>
+      </ul>
+      <input type="search" class="Navigation_Search" placeholder="  검색어를 입력해주세요.">
+      <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+    </nav>
+
+    <div class="Category" id="category">
+      <ul class="Category_list">
+        <li>전체</li>
+        <li>보드게임·TRPG</li>
+        <li>디지털게임</li>
+        <li>웹툰·만화</li>
+        <li>웹툰 리소스</li>
+        <li>디자인문구</li>
+        <li>캐릭터·굿즈</li>
+        <li>홈·리빙</li>
+        <li>테크·가전</li>
+        <li>반려동물</li>
+        <li>푸드</li>
+        <li>향수·뷰티</li>
+        <li>의류</li>
+        <li>잡화</li>
+        <li>주얼리</li>
+        <li>출판</li>
+        <li>디자인</li>
+        <li>예술</li>
+        <li>사진</li>
+        <li>음악</li>
+        <li>영화·비디오</li>
+        <li>공연</li>
+      </ul>
     </div>
   </header>
-
-  <nav class="Navigation">
-    <ul class="Navigation_list">
-      <li><i class="fa-solid fa-bars"></i> &nbsp; 카테고리</li>
-      <li>홈</li>
-      <li>인기</li>
-      <li>신규</li>
-      <li>마감임박</li>
-      <li>공개예정</li>
-    </ul>
-    <input type="search" class="Navigation_Search" placeholder="  검색어를 입력해주세요.">
-    <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-  </nav>
-  <hr>
-
 </body>
 
 </html>

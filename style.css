@@ -1,12 +1,18 @@
-.body {
+body {
+  margin: 0;
+}
+
+header {
+  border-bottom: 2px solid rgb(236, 236, 236);
+  box-shadow: 0px 3px 7px #e9e3e3;
   display: flex;
-  flex-flow: row;
+  flex-direction: column;
 }
 
 .head {
   width: 70%;
   height: 6vh;
-  margin: 10px auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -17,7 +23,6 @@
   background-image: url(/images/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .head .Logo_Wrapper:hover {
@@ -25,13 +30,17 @@
 }
 
 .head .Status_Wrapper {
-  width: 30vh;
+  display: flex;
+  flex-basis: 400px;
   height: 70%;
   display: flex;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .head .Status_Wrapper .Add_Project {
+  flex-basis: 100px;
+  flex-shrink: 1;
   height: 90%;
   background-color: white;
   border-style: none;
@@ -44,12 +53,15 @@
 }
 
 .head .Status_Wrapper .User_Status {
-
-  width: 140px;
-  height: 90%;
+  flex-basis: 150px;
+  /* flex-shrink: 1;  */
   background-color: white;
   border: 1px solid rgb(207, 206, 206);
   border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #user_icon {
@@ -69,7 +81,7 @@
 .Navigation {
   width: 70%;
   height: 4vh;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   position: sticky;
@@ -100,4 +112,36 @@
   border-radius: 5px;
   margin-left: auto;
   outline: none;
+}
+
+.Category {
+  margin: 0 auto;
+  width: 70%;
+  display: none;
+}
+
+.Category .Category_list {
+  height: 300px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Category .Category_list>li {
+  display: inline;
+  width: 170px;
+  flex-basis: 60px;
+  list-style: none;
+  font-size: small;
+  font-weight: 600;
+}
+
+.Category .Category_list>li:not(:first-child) {
+  color: rgb(71, 70, 70);
+  font-weight: 300;
+}
+
+.Category .Category_list>li:hover {
+  cursor: pointer;
 }

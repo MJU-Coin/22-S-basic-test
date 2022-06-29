@@ -14,4 +14,9 @@ window.onload = function () {
   category_list.addEventListener("mouseout", function () {
     category_list.style.display = "none";
   });
+
+  let search = document.getElementsByClassName("Navigation_Search");
+  search[0].addEventListener("click", function () {
+
+  })
 };

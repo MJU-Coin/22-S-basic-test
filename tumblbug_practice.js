@@ -17,6 +17,6 @@ window.onload = function () {
 
   let search = document.getElementsByClassName("Navigation_Search");
   search[0].addEventListener("click", function () {
-
   })
+
 };

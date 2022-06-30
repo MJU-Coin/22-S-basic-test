@@ -13,6 +13,10 @@ header {
   flex-direction: column;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .head {
   width: 70%;
   height: 6vh;
@@ -58,7 +62,6 @@ header {
 
 .head .Status_Wrapper .User_Status {
   flex-basis: 150px;
-  /* flex-shrink: 1;  */
   background-color: white;
   border: 1px solid rgb(207, 206, 206);
   border-radius: 5px;
@@ -151,9 +154,10 @@ header {
 
 .Main {
   width: 70%;
-  height: 60vh;
+  height: 120vh;
   margin: 30px auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .Main .Banner {
@@ -182,10 +186,10 @@ header {
   height: 100%;
 }
 
-.Main .Banner>button {
+.Main .Banner .Banner_list>li>button {
   position: relative;
-  top: -60px;
-  left: 570px;
+  top: -30px;
+  left: -120px;
   z-index: 1;
   margin: 0 10px;
   background-color: black;
@@ -200,7 +204,7 @@ header {
   font-size: large;
 }
 
-.Main .Banner>button:hover {
+.Main .Banner .Banner_list>li>button:hover {
   cursor: pointer;
   opacity: 80%;
 }
@@ -249,4 +253,75 @@ header {
 .Main .Notable_project .Notable_project_list>li>p:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+aside {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.Main .Popular_Project {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Main .Popular_Project button {
+  color: gray;
+  background-color: white;
+  border-style: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+.Main .Popular_Project button:first-child {
+  color: black;
+  font-weight: 700;
+  font-size: large;
+}
+
+.Main .Popular_Project_list {
+  padding: 0;
+}
+
+.Main .Popular_Project_list>li {
+  list-style: none;
+  height: 90px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main .Popular_Project_list>li>img {
+  height: 100%;
+}
+
+.Main .Popular_Project_list>li>h4 {
+  margin-top: 0;
+  color: red;
+}
+
+.Main .Popular_Project_list .Popular_Project_list_p {
+  width: 50%;
+  display: flex;
+  align-items: flex-start
+}
+
+.Main .Popular_Project_list .Popular_Project_list_p>p {
+  display: inline;
+  font-size: x-small;
+  color: gray;
+  margin-top: 0;
+}
+
+.Main .View_All_Popular_Porject {
+  margin: 0 auto;
+  width: 60%;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 7px 0px rgb(222 221 221);
+  color: rgb(124, 123, 123);
 }

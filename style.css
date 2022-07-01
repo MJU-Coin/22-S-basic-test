@@ -433,6 +433,10 @@ footer {
   padding: 0;
 }
 
+.Footer_menu ul li button:hover {
+  color: black;
+}
+
 .Footer_Tel {
   width: 15%;
   height: 100%;

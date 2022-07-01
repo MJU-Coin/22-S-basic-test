@@ -281,6 +281,13 @@ aside {
   font-size: large;
 }
 
+.Main .Popular_Project_time p {
+  margin-top: 0;
+  margin-left: 5px;
+  font-size: 10px;
+  color: gray;
+}
+
 .Main .Popular_Project_list {
   padding: 0;
 }
@@ -326,7 +333,6 @@ aside {
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 .Main .View_All_Popular_Porject {
   margin: 0 auto;

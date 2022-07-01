@@ -1,4 +1,5 @@
 window.onload = function () {
+  clock();
   let list_category = document.getElementById("category_list");
 
   let category_list = document.getElementById("category");
@@ -20,3 +21,16 @@ window.onload = function () {
   })
 
 };
+function clock() {
+  let target = document.getElementById("clock");
+  let time = new Date();
+
+  let year = time.getFullYear();
+  let month = time.getMonth();
+  let date = time.getDate();
+  let hours = time.getHours();
+  let minutes = time.getMinutes();
+
+  target.innerText =
+    `${year}.${month + 1}.${date} ${hours}.${minutes} 기준`;
+}

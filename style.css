@@ -322,6 +322,12 @@ aside {
   margin-top: 0;
 }
 
+.Main .Popular_Project_list .Popular_Project_list_p>p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 .Main .View_All_Popular_Porject {
   margin: 0 auto;
   width: 70%;

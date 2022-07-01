@@ -297,6 +297,13 @@ aside {
   height: 100%;
 }
 
+.Main .Popular_Project_list>li>img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s;
+  box-shadow: 0px 0px 9px 3px rgb(222 221 221);
+}
+
 .Main .Popular_Project_list>li>h4 {
   margin-top: 0;
   color: red;

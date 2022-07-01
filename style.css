@@ -348,3 +348,152 @@ aside {
 .Main .View_All_Popular_Porject:hover {
   background-color: rgb(238, 237, 237);
 }
+
+footer {
+  width: 100vw;
+  height: 30vh;
+  border-top: 1px solid rgb(230, 229, 229);
+  margin-bottom: 20px;
+}
+
+.Footer_menu {
+  width: 70%;
+  height: 60%;
+  margin: 10px auto;
+  border-bottom: 1px solid rgb(230, 229, 229);
+  display: flex;
+}
+
+.Footer_menu ul {
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_1>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_1>li>button {
+  width: 130px;
+  height: fit-content;
+  background-color: white;
+  color: gray;
+  border-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_2>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_2>li>button {
+  width: 130px;
+  height: fit-content;
+  background-color: white;
+  color: gray;
+  border-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_3>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_3>li>button {
+  width: 130px;
+  height: fit-content;
+  background-color: white;
+  color: gray;
+  border-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_4>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_4>li>button {
+  width: 130px;
+  height: 30px;
+  background-color: rgb(246, 242, 242);
+  color: gray;
+  border-style: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0;
+}
+
+.Footer_Tel {
+  width: 15%;
+  height: 100%;
+  margin-left: auto;
+  margin-top: 16px;
+}
+
+.Footer_Tel h4 {
+  margin: 0 auto;
+}
+
+.Footer_Tel p {
+  font-size: x-small;
+  color: gray;
+}
+
+.Footer_Tel button {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid rgb(208, 204, 204);
+  border-radius: 5px;
+}
+
+.Footer_information {
+  width: 70%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Footer_information .Footer_information_p {
+  font-size: small;
+  color: gray;
+}
+
+.Footer_information .Footer_information_SNS {
+  margin-left: auto;
+}
+
+.Footer_information .Footer_information_SNS button {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: gray;
+  border-style: solid;
+  border-color: rgb(219, 216, 216);
+  border-width: 1px;
+  border-radius: 100px;
+  margin-left: 5px;
+}
+
+.Agreement {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(235, 230, 230);
+}
+
+.Agreement p {
+  width: 70%;
+  margin: 10px auto;
+  font-size: 12px;
+  color: gray;
+}

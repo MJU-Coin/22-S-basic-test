@@ -485,6 +485,10 @@ footer {
   margin-left: 5px;
 }
 
+.Footer_information .Footer_information_SNS button:hover {
+  border-color: black;
+}
+
 .Agreement {
   width: 100vw;
   height: 5vh;

@@ -457,6 +457,11 @@ footer {
   border-radius: 5px;
 }
 
+.Footer_Tel button:hover {
+  border-color: black;
+  transition: all 1s;
+}
+
 .Footer_information {
   width: 70%;
   height: 40%;
@@ -487,6 +492,7 @@ footer {
 
 .Footer_information .Footer_information_SNS button:hover {
   border-color: black;
+  transition: all 1s;
 }
 
 .Agreement {

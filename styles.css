@@ -1,0 +1,557 @@
+body {
+    /* body 전체 margin 0 */
+    margin: 0;
+    /* 지정되는 font순서 */
+    font-family: 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, 'NotoSansKR', sans-serif;
+}
+
+header {
+    /* 자기자신을 기준으로 요소 배치 */
+    position: relative;
+    /* flexbox레이아웃 컨네이너 */
+    display: flex;
+    width: 100%;
+    /* 요소 컨테이너 중앙 정렬 */
+    justify-content: center;
+    /* 헤더 아래 그림자 */
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 6px;
+    /* z축 상의 위치=1000 */
+    z-index: 1000;
+}
+
+/* z-index가 꼭 필요한가? */
+/* z-index를 제외할 경우 왜 그림자가 사라지는가? */
+
+.HeaderWrapper {
+    /* 위쪽 margin 10px */
+    margin-top: 10px;
+    /* 수직 padding 0 수평 padding 20px */
+    padding: 0px 20px;
+    /* 요소 배치 기준 = 자기자신 */
+    position: relative;
+    /* flexbox레이아웃 컨네이너 */
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* 최소 높이 */
+    min-height: 105px;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.HeaderUpperLayout {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    max-height: 72px;
+    max-width: 1160px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoWrapper {
+    display: flex;
+    width: 132px;
+    height: 35px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo {
+    width: 200px;
+    height: 50px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 56px;
+}
+
+.BarWrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1160px;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 56px;
+    align-items: center;
+}
+
+.Category {
+    padding: 0px 6px;
+    min-height: 56px;
+    position: relative;
+    margin-right: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.CategoryIcon {
+    position: relative;
+    display: inline-flex;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home {
+    padding: 0px 6px;
+    min-height: 56px;
+    position: relative;
+    margin-right: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: 2px underline black;
+}
+
+.Popular {
+    padding: 0px 6px;
+    min-height: 56px;
+    position: relative;
+    margin-right: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.New {
+    padding: 0px 6px;
+    min-height: 56px;
+    position: relative;
+    margin-right: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.End {
+    padding: 0px 6px;
+    min-height: 56px;
+    position: relative;
+    margin-right: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.Soon {
+    padding: 0px 6px;
+    min-height: 56px;
+    position: relative;
+    margin-right: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.Category:hover {
+    color: orangered;
+}
+
+.Home:hover {
+    color: orangered;
+}
+
+.Popular:hover {
+    color: orangered;
+}
+
+.New:hover {
+    color: orangered;
+}
+
+.End:hover {
+    color: orangered;
+}
+
+.Soon:hover {
+    color: orangered;
+}
+
+.SearchBox {
+    position: relative;
+    padding: 0px 30px 0px 16px;
+    display: inline-flex;
+    width: 260px;
+    height: 36px;
+    background: rgb(243, 243, 243);
+    align-items: center;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.InputBox {
+    border: none;
+    font-size: 12px;
+    line-height: 28px;
+    background: rgb(243, 243, 243);
+}
+
+.SearchButton {
+    position: absolute;
+    right: 10px;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.HomeWrapper {
+    padding: 56px 20px 0px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+.TopSection {
+    max-width: 1160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 44px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.MainArticle {
+    width: 766px;
+    margin: 0px 78px 0px 0px;
+}
+
+.Slide {
+    margin-bottom: 45px;
+    margin: 0px auto;
+    display: flex;
+}
+
+.PhotoSlide {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0px;
+    position: left;
+}
+
+.PhotoSlide img {
+    width: 100%;
+    height: 100%;
+}
+
+.SlideNavigation {
+    display: flex;
+    align-items: center;
+}
+
+.LeftButton {
+    bottom: 13px;
+    right: 30px;
+    height: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.RightButton {
+    bottom: 13px;
+    right: 13px;
+    height: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.PageIndex {
+    min-width: 42px;
+    position: absolute;
+    font-size: 11px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 13px;
+    right: 70px;
+    height: 20px;
+    border-radius: 11px;
+    background: rgba(13, 13, 13, 0.2);
+    color: rgb(255, 255, 255);
+}
+
+.ct {
+    color: gray;
+    font-size: 10px;
+}
+
+.producer {
+    color: gray;
+    font-size: 10px;
+}
+
+.ct:hover {
+    text-decoration: 1px underline gray;
+}
+
+.producer:hover {
+    text-decoration: 1px underline gray;
+}
+
+.NotableProjectTitle {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.NotableProjectContent {
+    display: flex;
+}
+
+.N_CardWrapper {
+    align-items: flex-start;
+}
+
+.N_ImageWrapper {
+    width: 140px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    position: top;
+}
+
+.N_ImageWrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.N_InfoWrapper {
+    position: bottom;
+}
+
+aside {
+    max-width: 450px;
+    width: calc((100% - 766px) - 78px);
+    padding: 0px;
+}
+
+.asideTop {
+    padding: 0px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0px 0px 16px;
+}
+
+.asideHeader {
+    margin-right: 8px;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+}
+
+.asideTime {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    font-weight: 400;
+    color: rgb(109, 109, 109);
+    margin: 2px 0px 0px;
+    font-size: 12px;
+}
+
+.asideViewButton {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 0px;
+    line-height: 24px;
+    right: 12px;
+    color: rgb(109, 109, 109);
+}
+
+.asideContent {
+    width: 100%;
+}
+
+.P_CardWrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.P_ImageWrapper {
+    width: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.P_ImageWrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.Cardlabel {
+    justify-content: center;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: rgba(240, 80, 62, 0.9);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.asideBottomBtn {
+    color: gray;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    line-height: 28px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+footer {
+    padding: 0px 20px;
+}
+
+.FooterWrapper {
+    max-width: 1160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 44px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.FooterLinkWrapper {
+    display: flex;
+}
+
+.FooterLinkSiteWrrapper {
+    display: flex;
+    position: left;
+}
+
+.FooterLinkSite {
+    display: flex;
+    position: left;
+}
+
+.FooterLinkSite_ {
+    position: left;
+    font-size: 13px;
+    text-align: left;
+    padding-right: 25px;
+}
+
+.FooterLinkSite_ a {
+    text-decoration: none;
+    color: black;
+}
+
+.FooterLinkSite_ a:hover {
+    font-weight: bold;
+}
+
+.FooterLinkSite_Title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.FooterLinkApp {
+    display: flex;
+    position: right;
+}
+
+.FooterLinkApp div,
+a {
+    position: right;
+}
+
+.FooterLinkCustomer {
+    position: right;
+}
+
+.FooterCompanyWrapper {
+    display: flex;
+}
+
+.FooterCompanyInfo {
+    position: left;
+}
+
+.FooterCompanyInfo div {
+    display: inline;
+}
+
+.FooterSns {
+    position: right;
+    display: inline;
+}
+
+.FooterNotify {
+    padding: 20px;
+    background-color: lightgray;
+}

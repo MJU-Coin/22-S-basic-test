@@ -11,9 +11,56 @@
 </head>
 <body>    
   <section class="searchPage">
-  <input type="text" id="searchtext">
-  <button id="closeSearch" onclick="return closesearch()"><i class="fa-regular fa-x"></i></button>
-  </section>
+    <div class="inputcontainer">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchtext" placeholder="검색어를 입력해주세요." value ='' onchange="checktext();">
+      <button id ='resetbutton' onclick="return resetValue()"><i class="fa-regular fa-circle-xmark"></i></button>
+      <button id="closeSearch" onclick="return closesearch()"><i class="fa-regular fa-x"></i></button>
+    </div>
+
+    <div class="recKeyword">
+      <h3> 추천 검색어 </h3>
+      <h2>추천 검색어가 없습니다.</h2>
+    </div>
+    <div class="popSearchContainer">
+      <div id="populartext">
+        <h3>텀블벅 인기 검색어   </h3>
+        <div id='searchclock' onload="getTime()"></div>
+      </div>
+      <div class="popularkeywordcontainer">
+        <div class="keywords">
+          <p><b>1</b>   향수</p>
+        </div>
+        <div class="keywords">
+          <p><b>2</b>   타로</p>
+        </div>
+        <div class="keywords">
+          <p><b>3</b>   한복</p>
+        </div>
+        <div class="keywords">
+          <p><b>4</b>   센트라이브러리</p>
+        </div>
+        <div class="keywords">
+          <p><b>5</b>   화산귀환</p>
+        </div>
+        <div class="keywords">
+          <p><b>6</b>   인형</p>
+        </div>
+        <div class="keywords">
+          <p><b>7</b>   웹툰</p>
+        </div>
+        <div class="keywords">
+          <p><b>8</b>  타로카드</p>
+        </div>
+        <div class="keywords">
+          <p><b>9</b> 반지</p>
+        </div>
+        <div class="keywords">
+          <p><b>10</b> 스케치업</p>
+        </div>
+      </div>
+    </div>
+</section>
   <div class="pageView">
     <nav class="NavBar">
       <div class="HeaderWrapper">

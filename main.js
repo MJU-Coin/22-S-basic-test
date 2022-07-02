@@ -11,6 +11,27 @@ function closesearch(){
   mainPage.style.display = '';
 }
 
+function checktext(){
+  const SearchpageSearchinput = document.getElementById('searchtext');
+  const resetButton = document.querySelector('#resetbutton');
+  const recKeywords = document.querySelector('.recKeyword');
+  var textvalue = SearchpageSearchinput.value;
+  if (textvalue.length !== 0){
+    resetButton.style.display = 'block';
+    recKeywords.style.display = 'block';
+  } else{
+    resetButton.style.display = 'none';
+    recKeywords.style.display = 'none';
+  }
+}
+
+function resetValue(){ 
+  var textvalue = document.getElementById('searchtext');
+  textvalue.value = null
+  checktext()
+}
+
+
 function getTime(){
   var date = new Date()
   var Y = date.getFullYear();
@@ -29,6 +50,8 @@ function getTime(){
   var time = Y-2000 + '.' + M + '.' + D + ' ' + H + ':' + Min + ':' + S;
   document.getElementById('clock').innerText = time;
   document.getElementById('clock').textContent = time;
+  document.getElementById('searchclock').innerText = time;
+  document.getElementById('searchclock').textContent = time;
   setTimeout(getTime, 1000)
 }
 

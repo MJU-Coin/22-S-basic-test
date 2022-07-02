@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ko">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="HeaderContainer">
+        <div class="HeaderTop">
+            <img src="/images/logo.png" alt="logo.png">
+        </div>
+        <div class="HeaderBottom">
+            <Nav class="Nav">
+                <ul type="none" id="category">
+                    <li class="Li">
+                        카테고리
+                        <ul class="sebuCategory">
+                            <li class="sebuLi"></li>
+                        </ul>
+                    </li>
+                    <li class="Li">홈</li>
+                    <li class="Li">인기</li>
+                    <li class="Li">신규</li>
+                    <li class="Li">마감임박</li>
+                    <li class="Li">공개예정</li>
+                </ul>
+                
+            </Nav>
+            <input type="text" id="search" placeholder="검색어를 입력하세요" >
+        </div>
+    </div>
+    <div class="MainContainer">
+        <section class="Left"> 
+            <article id="top"></article>
+            <article id="bottom"></article>
+        </section>
+        <section class="Right">
+        </section>
+    </div>
+    <div class="FooterContainer">
+
+    </div>
 </body>
+
 </html>

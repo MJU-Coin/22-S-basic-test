@@ -1,0 +1,497 @@
+body{
+    margin: 0px;
+}
+
+.pageView{
+  margin: 0 auto;
+  max-width: 1100px;
+  min-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.NavBar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 0px 16px;
+    background-color: white;
+    z-index: 2;
+}
+
+.HeaderWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.navbarLogo{
+  position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_contents{
+    height: 100%;
+    width: 100%;
+    height: 56px;
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_contents ul{
+  padding-left: 0px;
+}
+
+.navbar_things{
+  width: 70%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.navbar_category>i{
+    height: 100%;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_things li, .navbar_category{
+    display: flex;
+    height: 100%;
+    padding: 0px 6px;
+    margin-right: 18px;
+    align-items: center;
+
+}
+
+.navbar_things a:hover{
+    color: red;
+}
+
+.navbar_category i:hover{
+  color: red;
+}
+
+.navbar_searchTool{
+  width: 200px;
+    border-radius: 6px;
+    display: flex;
+    padding: 0px 30px 0px 16px;
+    height: 36px;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+
+}
+.navbar_searchTool input{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    outline: none;
+    background-color: rgb(234, 234, 234);
+}
+
+.searchPage {
+  display: none;
+  margin: 10px 16px;
+  flex-direction: column;
+}
+
+.searchPage .inputcontainer{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.inputcontainer input{
+  width: 100%;
+  margin: 0px 10px;
+  outline: 0;
+  border: 0;
+}
+
+.inputcontainer button{
+  background-color: white;
+  border: 0;
+}
+
+.inputcontainer #resetbutton{
+  display: none;
+}
+
+.recKeyword{
+  display: none;
+}
+
+.recKeyword h2{
+  font-weight: 300;
+  color: gray;
+}
+
+.popSearchContainer #populartext{
+  display: flex;
+  align-items: center;
+}
+
+#populartext h3{
+  margin-right: 20px; 
+}
+
+.popularkeywordcontainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+.popularkeywordcontainer .keywords{ 
+  width: 50%;
+}
+main{
+  padding: 0px 16px;
+}
+
+.mainContainer{
+  display: flex;
+  width: 100%;
+}
+
+.mainContainer span{
+  color: gray;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.mainContainer span:hover{
+  text-decoration: underline;
+}
+
+#Leftcontents{
+  margin-right: 56px;
+  display: flex;
+  flex: 2 2 65%;
+  flex-direction: column;
+  height: auto;
+}
+
+#banner{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: lightgray;
+  height: 350px;
+
+}
+
+#noteableProjects{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#noteableProjects>div{
+  flex: 1 1 20%;
+  max-width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#noteableProjects .imagecontainer{  
+  margin-bottom: 10px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+#noteableProjects div img{
+  transition: all 0.3s linear;
+  max-width: 100%;
+  height: auto;
+}
+
+#noteableProjects div img:hover{
+  transform: scale(1.1);
+}
+
+#Rightcontents{
+  margin-top:20px ;
+  height: 100%;
+  flex: 1 1 35%;
+}
+
+#popularProjects{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#popularProjects>div{
+  padding-bottom: 20px;
+  display: flex;
+}
+
+#popularProjects .imagecontainer{
+  display: flex;
+  max-width: 140px;
+  overflow: hidden;
+}
+
+#popularProjects>div>.imagecontainer>img{
+  max-width: 100%;
+  transition: all 0.2s linear;
+}
+
+#popularProjects>div>.imagecontainer:hover img{
+  transform: scale(1.1);
+}
+
+#popularProjects>div>p{
+margin-top: 5px;
+padding: 0px 15px;
+font-weight: bold;
+}
+
+#popularProjects>div>div>p{
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#Rightcontents>#toppop{
+  display: flex;
+  justify-content: space-between;
+}
+
+#Rightcontents div>#pp{
+  font-size:x-large;
+  font-weight: bold;
+}
+
+#Rightcontents div>#lookAll{
+  color: gray;
+}
+
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer button{
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+}
+
+.buttonContainer button:hover{
+  background-color: lightgray;
+}
+
+
+footer{
+  width: 100%;
+  height: 100%;
+
+}
+
+.footerWrapper{
+  margin-top: 20px;
+  width: fit-content;
+  padding: 0px 16px;
+}
+
+.footertop{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footercontents{
+  display: flex;
+}
+
+.footercontents .contents{
+  padding: 5px;
+}
+
+
+.footerWrapper ul{
+  padding: 0px;
+  list-style: none;
+  margin-right: 45px;
+  width: 130px;
+}
+
+.footerWrapper .footercontents>.contents>button{
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px ;
+  border: 0;
+  outline: 0;
+}
+
+.footerWrapper li{
+  font-size: small;
+  padding: 5px;
+  line-height: 1.45;
+}
+
+.footerWrapper li:hover{
+  font-weight: bold;
+}
+
+.custsupport > button{
+  outline: 0;
+  border: 0.3;
+  border-color: rgb(217, 217, 217);
+  height: 35px;
+  width: 70%;
+  background-color: white;
+}
+
+.custsupport > button:hover{
+  outline: 0.5;
+  border-color: black;
+}
+
+
+.footerinfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+#tumblinfo{
+  width: 70%;
+}
+#tumblinfo p{
+font-size: 12.7px;
+}
+
+#footericons{
+  display: flex;
+
+}
+
+#footericons button{
+  border: 0;
+  outline: 0;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+#footericons button:hover{
+  border: 0.5px solid black;
+}
+
+.footernotice{
+  background-color: lightgray;
+  padding: 8px 0px;
+  margin-bottom: 20px;
+}
+
+.footernotice{
+  font-size: 13px;
+}
+
+
+@media screen and (max-width: 1100px){
+  .pageView{
+      margin: 0 auto;
+    max-width: 1100px;
+    min-width: 1000px;
+    width: 100%;
+    position: relative;
+  }
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Leftcontents{
+    display: flex;
+    margin: 0;
+  }
+
+  #noteableProjects{
+    flex-wrap: nowrap;
+  }
+
+  #popularProjects{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+  }
+
+  #popularProjects>div{
+    height: 20%;
+    width: 50%;
+  }
+
+  .footertop{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footercontents{
+    width: 100%;
+    flex-wrap: wrap;
+    display: inline-flex;
+  }
+
+  .footercontents .contents{
+    flex: 1 1 25%;
+    width: 50%;
+    display: inline-flex;
+    margin: 0;
+    padding: 0%;
+  }
+
+
+  .footercontents .contents h3{
+    display: none;
+  }
+
+  .footerWrapper .footercontents>.contents>button{
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .custsupport > button{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footerinfo{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }  
+
+  .footerinfo #tumblinfo p{
+    width: 1000px;
+  }
+
+  .footerinfo #tumblinfo br{
+    display: none;
+  }
+}

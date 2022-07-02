@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tumblbugclonecoding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54d588a27c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>    
+  <section class="searchPage">
+    <div class="inputcontainer">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchtext" placeholder="검색어를 입력해주세요." value ='' onchange="checktext();">
+      <button id ='resetbutton' onclick="return resetValue()"><i class="fa-regular fa-circle-xmark"></i></button>
+      <button id="closeSearch" onclick="return closesearch()"><i class="fa-regular fa-x"></i></button>
+    </div>
+
+    <div class="recKeyword">
+      <h3> 추천 검색어 </h3>
+      <h2>추천 검색어가 없습니다.</h2>
+    </div>
+    <div class="popSearchContainer">
+      <div id="populartext">
+        <h3>텀블벅 인기 검색어   </h3>
+        <div id='searchclock' onload="getTime()"></div>
+      </div>
+      <div class="popularkeywordcontainer">
+        <div class="keywords">
+          <p><b>1</b>   향수</p>
+        </div>
+        <div class="keywords">
+          <p><b>2</b>   타로</p>
+        </div>
+        <div class="keywords">
+          <p><b>3</b>   한복</p>
+        </div>
+        <div class="keywords">
+          <p><b>4</b>   센트라이브러리</p>
+        </div>
+        <div class="keywords">
+          <p><b>5</b>   화산귀환</p>
+        </div>
+        <div class="keywords">
+          <p><b>6</b>   인형</p>
+        </div>
+        <div class="keywords">
+          <p><b>7</b>   웹툰</p>
+        </div>
+        <div class="keywords">
+          <p><b>8</b>  타로카드</p>
+        </div>
+        <div class="keywords">
+          <p><b>9</b> 반지</p>
+        </div>
+        <div class="keywords">
+          <p><b>10</b> 스케치업</p>
+        </div>
+      </div>
+    </div>
+</section>
+  <div class="pageView">
+    <nav class="NavBar">
+      <div class="HeaderWrapper">
+        <div class="navbarLogo">
+          <img src="images/logo.png" width="140" height="36">
+        </div>
+        <div class="navbar_contents"> 
+            <ul class="navbar_things">
+              <div class="navbar_category">
+                <i class="fa-solid fa-bars"></i>
+                <a href="">카테고리</a>
+              </div>
+              <li><a href="#">홈</a></li>
+              <li><a href="#">인기</a></li>
+              <li><a href="#">신규</a></li>
+              <li><a href="#">마감임박</a></li>
+              <li><a href="#">공개예정</a></li>
+            </ul>
+          <div class="navbar_searchTool">
+            <input type="text" placeholder="검색어를 입력해주세요." id="mainsearch" onclick="return opensearch()">
+            <div class="inputicon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="mainContainer">
+        <section id="Leftcontents">
+          <article id="banner">
+          </article>
+          <h3>주목할 만한 프로젝트</h3>
+          <article id="noteableProjects">
+            
+          </article>
+        </section>
+        <section id ="Rightcontents">
+          <div id="toppop">
+            <a href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing" id="pp">인기 프로젝트</a>
+            <a href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing" id="lookAll">전체보기</a>
+          </div>
+          <div>
+            <div id="clock" onload="getTime()"></div>
+          </div>
+          <aside id="popularProjects">
+          </aside>
+          <div class="buttonContainer">
+          <button type="button" onclick="location.href='https:/\\/tumblbug.com/discover?sort=popular&ongoing=onGoing'">인기 프로젝트 전체보기</button>
+        </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footerWrapper">
+        <div class="footertop">
+          <div class="footercontents">
+            <ul class="contents">
+              <h3>텀블벅</h3>
+              <li>공지사항</li>
+              <li>서비스 소개</li>
+              <li>채용</li>
+              <li>2021 연말결산</li>
+            </ul>
+            <ul class="contents">
+              <h3>이용안내</h3>
+              <li>헬프 센터</li>
+              <li>첫 후원 가이드</li>
+              <li>창작자 가이드</li>
+              <li>제휴 협력</li>
+            </ul>
+            <ul class="contents">
+              <h3>정책</h3>
+              <li>이용약관</li>
+              <li>개인정보 처리방침</li>
+              <li>프로젝트 심사 기준</li>
+            </ul>
+            <ul class="contents" id="apps">
+              <h3>App</h3>
+              <button><i class="fa-brands fa-google-play"></i> 안드로이드</button>
+              <button><i class="fa-brands fa-apple"></i> IOS</button>
+            </ul>
+          </div>
+          <div class="custsupport">
+            <h3>고객지원</h3>
+            <p>평일 9:00 ~ 17:00 (12:00 ~14:00 제외)</p>
+            <button id="supbutton">
+              텀블벅에 문의
+            </button>
+          </div>
+        </div>
+        <div class="footerbot">
+          <div class="footerinfo">
+            <div id="tumblinfo">
+              <p><b>회사명</b>
+                텀블벅(주)
+                <b>주소</b>
+                서울 서초구 서초대로 398, 19층 (서초동, BNK디지털)
+                <b>대표</b>
+                김동환
+                <b>사업자등록번호</b>
+                105-87-52823<br>
+                <b>통신판매업 신고번호</b>
+                2019-3010165-30-2-02129
+                <b>대표번호</b>
+                02-6080-0760<br>
+                © 2022 Tumblbug Inc.</p>
+            </div>
+            <div id="footericons">
+              <button><i class="fa-solid fa-comment"></i></button>
+              <button><i class="fa-brands fa-facebook"></i></button>
+              <button><i class="fa-brands fa-twitter"></i></button>
+              <button><i class="fa-brands fa-instagram-square"></i></button>
+              <button><i class="fa-solid fa-n"></i></button>
+              <button><i class="fa-thin fa-b"></i></button>
+            </div>
+          </div>
+          <div class="footernotice">
+        <p>텀블벅은 플랫폼 제공자로서 프로젝트의 당사자가 아니며, 직접적인 통신판매를 진행하지 않습니다. 프로젝트의 완수 및 선물제공의 책임은 해당 프로젝트의 창작자에게 있으며, 
+          프로젝트와 관련하여 후원자와 발생하는 법적 분쟁에 대한 책임은 해당 창작자가 부담합니다.</p>
+      </div>
+        </div>
+      </div>
+    
+    </footer>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

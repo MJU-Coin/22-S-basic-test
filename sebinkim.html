@@ -1,0 +1,434 @@
+<!DOCTYPR html>
+<html>
+<head>
+<meta charset ="UTF-8">
+<title>김세빈</title>
+<style type="text/css">
+	*{margin: 0;padding:0;}
+	body {margin-left:300px ;margin-right:300px;}
+	header {width: 1200px; height: 40px; padding: 10;margin: 10;}
+	nav {width: 1200px; height:30px;  padding: 10;margin:10;z-index: 1;}
+	aside {width:380px; height: 1040px;float:left; margin:10 0 0 10;}
+	footer{width: 1200px; height: 300px;clear: both;}
+	#screen {
+		width: 780px;
+		height: 1000px;
+		float: left;
+		margin: 0 20 0 0;
+	}
+	#screen1 {
+		position: relative;
+		width: 780px;
+		height: 300px;
+		overflow: hidden;
+		margin: 10;
+		padding: 0;
+	}
+	#screen2 {
+		width: 780px;
+		height: 700px;
+		margin: 30 0 0 10;
+		padding: 0;
+	}
+	#mainmenu,
+	#submenu,
+	#footmenu,
+	#side {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#mainmenu {
+		float: left;
+		position: relative;	
+	}
+	#mainmenu >li {
+		float: left;
+	}
+	#mainmenu >li>a {
+		font-size: 15px;
+		font-weight:bold;
+		color: black;
+		position: relative;
+		display: block;
+		text-decoration: none;
+		padding: 5 25 5 2;
+		text-align: left;
+	}
+	#mainmenu>li:hover>a {
+		color: orange;
+		cursor: pointer;
+		z-index: 1500;
+	}
+	#mainmenu >li:hover #submenu {
+		visibility: visible;
+
+	}
+	#submenu {
+		position: absolute;
+		background: white;
+		visibility: hidden;
+		z-index: 1;
+	}
+	#submenu >li {
+		padding: 16px 28px;
+	}
+	#submenu >li >a {
+		color: black;	
+		text-decoration: none;
+	}
+	#submenu>li:hover>a {
+		color: orange;
+		cursor: pointer;
+		visibility: visible;
+		z-index: 999;
+	}
+	#foot >td{
+		font-weight: bold;
+		font-size: 19;
+		padding: 10 50 0 3;
+		
+	}
+	#footmenu >td {
+		font-size: 13px;
+		font-weight:bold;
+		color: black;
+		padding: 10 15 15 3;
+		text-align: left;
+		text-decoration: none;
+	}
+	#footmenu>td:hover {
+		color: grey;
+		cursor: pointer;
+	}
+	#search {
+		position: relative;
+	}
+	#search-design {
+		position: relative;
+		width: 200px;
+		height: 30px;
+		border: 1 solid #a0a0a0;
+		border-radius: 5px;
+		margin: 2 2 2 2;
+		text-align: left;
+		float: right;
+	}
+	#search_1 {
+
+	}
+	.btn_search {
+		font-weight: 900;
+		border: none;
+		cursor: pointer;
+		left: 1000px;
+		position: absolute;
+		
+	}
+	#btn_design {
+		width: 250px;
+		height: 50px;
+		border: 1px solid #D3D3D3;
+		border-radius: 30px;
+		text-align: center;
+		background: white;
+		display: block;
+		margin: auto;
+	}
+	#btn_design:hover {
+		background: #D3D3D3;
+	}
+	#slide-show {
+		z-index: 2;
+		transition :.5s ease-out;
+	}
+	#side>li>img {
+		align:top; 
+		float: left; 
+		margin:5 5 5 0;
+		width: 100px;
+		height:100px;
+		overflow: hidden;
+		-webkit-transform:scale(1);
+		-moz-transform:scale(1);
+		-ms-transform:scale(1);
+		-o-transform:scale(1);
+		transition: all 0.3s ease;
+	}	
+	#side>li>img:hover {
+		transform: scale(1.15);
+		-webkit-transition:scale(1.15);
+		-moz-transition:scale(1.15);
+		-ms-transition:scale(1.15);
+		-o-transition:scale(1.15);
+		transition:scale(1.15);
+	}
+	#side>li>h4 {
+		color: grey;
+		font-size: 13px;
+		margin: 5 10 5 0;
+	}
+	#side>li>h4:hover {
+		text-decoration:underline ;
+	}
+	#side>li>span{
+		text-align: left;
+		font-size: 14px;
+		margin: 12 12 12 0;
+		font-weight: bold;
+		font-display:block;
+	}
+	#side>li>h5 {
+		color: red;
+		font-size: 12px;
+		margin: 5 5 5 0;
+		font-weight: bold;
+	}
+	td img{
+		float: left;
+		display: inline-block;
+		margin:30 20 20 0 ;
+		padding: 0;
+		width: 178;
+		height:165;	
+		-webkit-transform:scale(1);
+		-moz-transform:scale(1);
+		-ms-transform:scale(1);
+		-o-transform:scale(1);
+		transition: all 0.3s ease;
+		}
+	td img:hover{
+		transform: scale(1.15);
+		-webkit-transition:scale(1.15);
+		-moz-transition:scale(1.15);
+		-ms-transition:scale(1.15);
+		-o-transition:scale(1.15);
+		transition:scale(1.15);
+	}
+	td span {
+		font-size: 10.5px;
+		font-weight: bold;
+		color: grey;
+	}
+	td span:hover{
+		text-decoration: underline;
+	}
+	td h4 {
+		text-align: left;
+		margin: 10 10 10 0;
+		font-size: 14px;
+	}
+	td h5 {
+		color: red;
+	}
+	#gogak {
+		float: right;
+		margin: 15 10 0 0;
+	}
+	#qst {
+		width: 200px;
+		height: 40px;
+		border: 1px solid #D3D3D3;
+		border-color: grey;
+		background: white;
+		border-radius: 10px;
+		margin: 20 0 0 0;
+		text-align: center;
+		display: block;	
+	}
+	#qst:hover {
+		background:#D3D3D3;
+	}
+	#app {
+		width: 160px;
+		height: 40px;
+		border: 1px solid #D3D3D3;
+		background: whitesmoke;
+		margin:8 8 8 0 ;
+		padding:2 2 2 2;
+		border-radius: 10px;
+		text-align: center;
+		display: block;	
+	}
+	a:visited{
+		color: black;
+		text-decoration: none;
+	} 
+	#sns>i {
+		float: right;
+		margin: 0 15 10 0;
+	}
+	#sns>i:hover{
+		text-decoration: underline;
+	}
+	#realfoot{
+		background: #d3d3d3;
+	}
+	</style>
+	<script src="https://kit.fontawesome.com/f6c7cbbd6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<img src="image/logo.png" style="float: left; margin:auto;padding: 5 5 5 5; width: 150; height: 40;">
+	</header>
+	<nav >
+		<ul id ="mainmenu">
+			<li><a href="#"><i class="fa-solid fa-bars"></i> 카테고리</a></li>
+				<ul id="submenu">
+					<li><a href="#"> 전체</a></li>
+					<li><a href="#">보드게임</a></li>
+					<li><a href="#">디지털 게임</a></li>
+					<li><a href="#">웹툰-만화</a></li>
+				</ul>
+			</li>
+			<li><a href="#">홈</a></li>
+			<li><a href="#">인기</a></li>
+			<li><a href="#">신규</a></li>
+			<li><a href="#">마감임박</a></li>
+			<li><a href="#">공개예정</a></li>
+		</ul>
+		<div id = "search">
+			<input type="text"  id="search-design" placeholder="검색어를 입력해주세요." list="recomend">
+				<datalist id="recomend">
+					<option value="best1">
+					<option value="best2">
+					<option value="best3">
+				</datalist>
+		</div>
+	</nav>
+	<hr style="color:#a0a0a0" width="1230">
+	<div id="screen">
+		<div id="screen1">
+			<ul  id="slide-show">
+				<li><img src="image/banner1.jpg" alt=""></li>
+				<li><img src="image/banner2.jpg" alt=""></li>
+				<li><img src="image/banner3.jpg" alt=""></li>
+				<li><img src="image/banner4.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div id=screen2>
+			<h3> 주목할 만한 프로젝트</h3>
+			<table>
+				<tr>
+					<td><img src="image/notable_project1.jpg" alt=""></td>
+					<td><img src="image/notable_project2.jpg" alt=""></td>
+					<td><img src="image/notable_project3.jpg" alt=""></td>
+					<td><img src="image/notable_project4.jpg" alt=""></td>
+				</tr>
+				<tr>
+					<td><p><span>디자인 문구 / Wearingeul(글입다)</span><h4>악필은 고칠 수 있어. 그것도 매우 쉽게! 글씨 교정 노트</h4><h5>1717% 달성</h5></p></td>
+					<td><p><span>네이버 웹툰 / 웹툰-만화</span><h4>스타급 성우진과 함께 하는 <집이 없어> 오디오웹툰 시즌1</h4><h5>152% 달성</h5></p></td>
+					<td><p><span>푸드 / UNFISK109</span><h4>참치 아니었어? 식물성참치 UNTUNA! 이제는 대체참치다</h4><h5>1723% 달성</h5></p></td>
+					<td><p><span>테크·가전 / 주식회사 하만</span><h4>감성까지 충전하는 다재다능한 5 in 1 충전기 C.C</h4><h5>34% 달성</h5></p></td>
+				</tr>
+				<tr>
+					<td><img src="image/notable_project5.jpg" alt=""></td>
+					<td><img src="image/notable_project6.jpg" alt=""></td>
+					<td><img src="image/notable_project7.jpg" alt=""></td>
+					<td><img src="image/notable_project8.jpg" alt=""></td>
+				</tr>
+				<tr>
+					<td><p><span>디자인 문구 / Wearingeul(글입다)</span><h4>세상으로 생명을 배달하는 [숲 속의 배달부]</h4><h5>1717% 달성</h5></p></td>
+					<td><p><span>웹툰-만화 / 박인주</span><h4>귀신들의 소망을 그린 만화 [꿈의 유실물]</h4><h5>299% 달성</h5></p></td>
+					<td><p><span>주얼리 / SUITTE(수티)</span><h4>자연이 만든 아름다운 모양,조약돌처럼 귀여운 향수목걸이</h4><h5>1463% 달성</h5></p></td>
+					<td><p><span>출판 / 초점, magazine focus</span><h4>한강을 제대로 즐기고 싶다면, <한강의 대교></h4><h5>134% 달성</h5></p></td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+	</section>
+	<aside >
+		<h3 style="color: black;"><a style=" text-decoration-line: none;" href="#">인기 프로젝트</a><span style="font-size: 12px; color: black; float: right;"><a style=" text-decoration-line: none;" href="#">전체보기</a></span></h3>
+		<span style="font-size: 7px; margin: 0 0 0 5;" id="getclock"></span>
+			<script>
+			
+			function getclock(){
+				let clock =document.getElementById("getclock");
+				let now = new Date();
+				let year = now.getFullYear();
+				let month = now.getMonth() +1;
+				let date = now.getDate();
+				let hour = now.getHours();
+				let minutes = now.getMinutes();
+				let seconds = now.getSeconds();
+				let today = year +"."+month+"."+date+" "+hour+":"+minutes+":"+seconds
+				clock.innerHTML = today
+		}
+			getclock();
+			setInterval(getclock,1000);
+		</script>
+		<br>
+		<br>
+		<ul id ="side">
+			<li><img src="image/popular_project1.jpg"> <strong style="color:red;">1</strong><p><h4>디자인 / 쥬나</h4><span> 읽기 쉽고 화려한 '덕질 타로' [로제딕]</span><br><h5>1148% 달성</h5><br></p></li>
+			<li><img src="image/popular_project2.jpg"><strong style="color:red;">2</strong><p><h4>푸드 / mintea</h4><span>입에서 굴릴수록 치아가 건강해지는 마법의 사탕,자일로큐브</span> <h5>12202% 달성</h5></p></li>
+			<li><img src="image/popular_project3.jpg"><strong style="color:red;">3</strong><p><h4>출판 / 그로스쿨</h4><span> 이것만 알아도 대화가 통한다! IT/기획/개발/마케팅 용어</span><h5>5873% 달성</h5></p></li>
+			<li><img src="image/popular_project4.jpg"><strong style="color:red;">4</strong><p><h4>향수,뷰티 / 퍼퓸바 </h4><span> [섹스 온 더 비치] 너의 사랑을 이뤄줄 은밀한 칵테일향기 </span><h5>458% 달성</h5></p></li>
+			<li><img src="image/popular_project5.jpg"><strong style="color:red">5</strong><p><h4> 향수,뷰티 / 소아모 </h4><span>넥타르와 함께 즐긴, 승도복숭아를 품은 '암브로시아 향수'</span><h5>247% 달성</h5></p></li>
+			<li><img src="image/popular_project6.jpg"><strong style="color:red">6</strong><p><h4>향수,뷰티 / 닉스</h4><span>[타로 퍼퓸] 달콤한 라즈베리빛 & 잔잔한 바이올렛빛 사랑</span><h5>322% 달성</h5></p></li>
+			<li><img src="image/popular_project7.jpg"><strong style="color:red">7</strong><p><h4>웹툰 리소스 / 팀 플래터</h4><span>2D처럼 자연스럽게! 그대로 쓰는 3D < 프릴&레이스 ></span><h5>168% 달성</h5></p></li>
+			<li><img src="image/popular_project8.jpg" ><strong style="color:red">8</strong><p><h4>웹툰,만화 / 네이버웹툰 </h4><span> 네이버웹툰 <도롱이>
+			 단행본 1-5권 세트 제작</span><h5>1908% 달성</h5></p></li>
+	</ul>
+	<br>
+	<button id="btn_design"> 인기 프로젝트 전체 보기</button>
+	</aside>
+	<footer>
+		<hr>
+		<table>
+				<tr id="foot">	
+					<td>텀블벅</td>
+					<td>이용안내</td>
+					<td>정책</td>
+					<td>App</td>
+				</tr>
+				<tr id ="footmenu">
+					<td>공지사항</td>
+					<td>헬프 센터</td>
+					<td>이용약관</td>
+					<td rowspan="3"><button id="app">▶ 안드로이드</button><button id="app">IOS</button></td>
+				</tr>
+				<tr id ="footmenu">
+					<td>서비스 소개</td>
+					<td>첫 후원 가이드</td>
+					<td>개인정보 처리방침</td>
+				</tr>
+				<tr id ="footmenu">
+					<td>채용</td>
+					<td>창작자 가이드</td>
+					<td>프로젝트 심사 기준</td>
+				</tr>
+				<tr id ="footmenu">
+					<td>2021 연말결산</td>
+					<td>제휴 협력</td>
+				</tr>
+		<div id="gogak">
+			<h3>고객 지원</h3>
+			<br>
+			<h5>평일 9:00 ~ 17:00 (12:00 ~ 14:00 제외)</h5>
+			<button id="qst">텀블벅에 문의</button>
+		</div>
+		</table>
+		<hr>
+		<h5 style="margin: 12 2 2 2;"><strong>회사명</strong> 텀블벅(주) <strong>주소</strong>서울 서초구 서초대로 398, 19층(서초동, BNK디지털) <strong>대표</strong> 김동한 <strong>사업자등록번호</strong> 105-87-52823</h5>
+		<div id="sns">
+			<i class="fa-brands fa-facebook-messenger fa-lg"></i>
+			<i class="fa-brands fa-facebook fa-lg"></i>
+			<i class="fa-brands fa-instagram fa-lg"></i>
+			<i class="fa-brands fa-twitter fa-lg"></i>
+			<i class="fa-solid fa-circle-envelope fa-lg"></i>
+			
+		</div>
+		<h5 style="margin: 12 2 2 2"><strong>통신판매업 신고번호</strong>2019-3010165-302-202129 <strong>대표번호 </strong>02-6080-0760</h5>
+		<h5 style="color:grey;"> &copy; 2022 Tumblbug Inc.</h5>
+		<br>
+		<hr>
+		<div id ="realfoot">
+			<h5 style="margin: 2 2 2 2">텀블벅은 플랫폼 제공자로서 프로젝트의 당사자가 아니며, 직접적인 통신판매를 진행하지 않습니다. 프로젝트의 완수 및 선물 제공의 책임은 해당 프로젝트의 창작자에게 있으며, 프로젝트와 관련하여 후원자와 발생하는 법적 분쟁에 대한 책임은 해당 창작자가 부담합니다. </h5>
+		</div>
+	</footer>
+
+
+</body>
+</html>

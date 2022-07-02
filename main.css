@@ -1,0 +1,143 @@
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.HeaderContainer{
+    display:flex;
+    flex-direction:column;
+    height:126px;
+    
+}
+.HeaderTop{
+    border-style: dashed;
+    height:60px;
+}
+.HeaderBottom{
+    border-style: dashed;
+    height:56px;
+    vertical-align: middle;
+}
+/* #category>input[type=checkbox]:checked~.sebuCategory{
+    display: block;
+} */
+.Li{
+    float:left;
+    padding: 0px 10px;
+}
+.Li:hover{
+    color:red;
+}
+.HeaderBottom>input{
+    float:right;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(231, 231, 231);
+    height:36px;
+    width:300px;
+    vertical-align: top;
+}
+
+
+
+
+.HeaderTop>img{
+    width:140px;
+    height:36px;
+}
+.MainContainer{
+    border-style: dashed;
+    display:flex;
+    flex-direction: row;
+    height:1300px;
+}
+.MainContainer>.Left{
+    display:flex;
+    flex-direction: column;
+    width:70%;
+    border-style: dashed;
+}
+.Left>#top{
+    border-style: dashed;
+    height:30%;
+    display:flex;
+    align-items: center;
+}
+#top>img{
+    width:700px;
+    height:100%;
+}
+
+.Left>#bottom{
+    border-style: dashed;
+    display:flex;
+    flex-direction: column;
+    height:auto;
+}
+#bottom>h1{
+    float:left;
+}
+#bottom>.card1{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    
+}
+.card1>.card-notable{
+    border-style:dashed;
+    
+    width:20%;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.card1>.card-notable:hover{
+    border-style:dashed;
+    
+    width:25%;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.card-notable>img{
+    height:auto;
+    
+}
+.card-notable>.category-creater{
+    
+    color:grey;
+    font-size: small;
+    
+}
+.card-notable>.percent{
+    
+    color:red;
+    
+}
+.MainContainer>.Right{
+    width:30%;
+    border-style: dashed;
+}
+.FooterContainer{
+    border-style: dashed;
+    display:flex;
+    flex-direction: column;
+    height:420px;
+  
+}
+.FooterContainer>.card2{
+    border-style: dashed;
+    display:flex;
+    flex-direction: row;
+}
+.card-Footer>.title{
+    color:black;
+}
+.card-Footer>ul>.sebu{
+    color:rgb(145, 145, 145);
+}
+.card-Footer>ul>.sebu:hover{
+    color:black;
+}

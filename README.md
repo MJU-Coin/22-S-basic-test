@@ -11,7 +11,11 @@ COW HTML, CSS, JS 기본기 테스트를 위한 Repository입니다.
 ![Branch 생성하기](https://user-images.githubusercontent.com/61923768/175819862-e1158cf1-6914-4789-a56c-77fdacb21472.png)
 4. PR 생성하기
 ![PR 생성하기](https://user-images.githubusercontent.com/61923768/175819982-c60b10ca-0629-4c23-aa90-9fe2a63b867d.png)
-![PR 작성하기](https://user-images.githubusercontent.com/61923768/175821240-d6df29bc-3b98-4a9c-8dfb-310d0d0a8873.png)
+![PR 작성하기](https://user-images.githubusercontent.com/61923768/175821970-2264ab0b-bb1b-4a69-b36a-aed358ce3889.png)
+
+
+### 요구사항
+[notion으로 자세히 보기](https://coin-on-web.notion.site/Web-32abd85a25c542aabef2dae7bffa0fbf)
 
 ### 과제를 통해 기대하는 역량
 

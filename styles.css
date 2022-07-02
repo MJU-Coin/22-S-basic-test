@@ -456,6 +456,11 @@ aside {
     height: 100%;
 }
 
+.P_ImageWrapper img:hover {
+    width: 105%;
+    height: 105%;
+}
+
 .Cardlabel {
     justify-content: center;
     width: 43px;

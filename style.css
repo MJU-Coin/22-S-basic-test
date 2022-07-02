@@ -15,7 +15,6 @@ a {
     color: black;
 }
 
-
 .NavBar{
     display: flex;
     position: sticky;
@@ -33,6 +32,7 @@ a {
 }
 
 .navbarLogo{
+  position: relative;
     height: 50px;
     display: flex;
     align-items: center;
@@ -171,13 +171,13 @@ main{
 #noteableProjects div img:hover{
   transform: scale(1.1);
 }
+
 #Rightcontents{
   margin-top:20px ;
   height: 100%;
   flex: 1 1 35%;
   background-color: skyblue;
 }
-
 
 #popularProjects{
   margin-top: 15px;
@@ -235,8 +235,6 @@ font-weight: bold;
 }
 
 
-
-
 .buttonContainer{
   display: flex;
 
@@ -259,29 +257,103 @@ font-weight: bold;
 footer{
   width: 100%;
   height: 100%;
-  background-color: rgb(99, 121, 152);
+
 }
 
 .footerWrapper{
+  margin-top: 20px;
   width: fit-content;
   padding: 0px 16px;
 }
 
-.footercontents{
+.footertop{
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
+
+.footercontents{
+  display: flex;
+}
+
+.footercontents .contents{
+  padding: 5px;
+}
+
 
 .footerWrapper ul{
   border: 1px solid black;
   padding: 0px;
   list-style: none;
+  margin-right: 45px;
+  width: 130px;
+}
+
+.footerWrapper .footercontents>.contents>button{
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px ;
+  border: 0;
+  outline: 0;
+  background-color: rgb(226, 223, 223);
 }
 
 .footerWrapper li{
-  line-height: 1.8;
+  padding: 5px;
+  line-height: 1.45;
 }
 
 .footerWrapper li:hover{
   font-weight: bold;
+}
+
+.custsupport > button{
+  outline: 0;
+  border: 0.3;
+  border-color: rgb(217, 217, 217);
+  height: 35px;
+  width: 70%;
+  background-color: white;
+}
+
+.custsupport > button:hover{
+  outline: 0.5;
+  border-color: black;
+}
+
+
+.footerinfo{
+  display: flex;
+  justify-content: space-between;
+}
+
+#tumblinfo{
+  width: 70%;
+}
+#tumblinfo p{
+font-size: small;
+}
+
+#footericons{
+  display: flex;
+
+}
+
+#footericons button{
+  border: 0;
+  outline: 0;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+#footericons button:hover{
+  border: 0.5px solid black;
+}
+
+.footernotice{
+  background-color: lightgray;
+  padding: 8px 16px;
+  margin-bottom: 20px;
 }

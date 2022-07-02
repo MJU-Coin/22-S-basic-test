@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  margin: 10px auto;
+  border-bottom: 2px solid rgb(236, 236, 236);
+  box-shadow: 0px 3px 7px #e9e3e3;
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.head {
+  width: 70%;
+  height: 6vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.head .Logo_Wrapper {
+  width: 20vh;
+  height: 70%;
+  background-image: url(/images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.head .Logo_Wrapper:hover {
+  cursor: pointer;
+}
+
+.head .Status_Wrapper {
+  display: flex;
+  flex-basis: 400px;
+  height: 70%;
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.head .Status_Wrapper .Add_Project {
+  flex-basis: 100px;
+  flex-shrink: 1;
+  height: 90%;
+  background-color: white;
+  border-style: none;
+  margin-right: 15px;
+  font-weight: 650;
+}
+
+.head .Status_Wrapper .Add_Project:hover {
+  cursor: pointer;
+}
+
+.head .Status_Wrapper .User_Status {
+  flex-basis: 150px;
+  background-color: white;
+  border: 1px solid rgb(207, 206, 206);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#user_icon {
+  padding-top: 4px;
+  color: white;
+  width: 23px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(222, 221, 221);
+  margin-right: 5px;
+}
+
+.head .Status_Wrapper .User_Status:hover {
+  cursor: pointer;
+}
+
+.Navigation {
+  width: 70%;
+  height: 4vh;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+}
+
+.Navigation .Navigation_list {
+  padding-left: 0;
+}
+
+.Navigation .Navigation_list>li {
+  height: 80%;
+  display: inline;
+  list-style: none;
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.Navigation .Navigation_list>li:hover {
+  cursor: pointer;
+  color: rgb(236, 86, 22);
+}
+
+.Navigation .Navigation_Search {
+  width: 200px;
+  height: 80%;
+  background-color: rgb(247, 246, 246);
+  border-style: none;
+  border-radius: 5px;
+  margin-left: auto;
+  outline: none;
+}
+
+.Category {
+  margin: 0 auto;
+  width: 70%;
+  display: none;
+}
+
+.Category .Category_list {
+  height: 300px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Category .Category_list>li {
+  display: inline;
+  width: 170px;
+  flex-basis: 60px;
+  list-style: none;
+  font-size: small;
+  font-weight: 600;
+}
+
+.Category .Category_list>li:not(:first-child) {
+  color: rgb(71, 70, 70);
+  font-weight: 300;
+}
+
+.Category .Category_list>li:hover {
+  cursor: pointer;
+}
+
+.Main {
+  width: 70%;
+  height: 120vh;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main .Banner {
+  max-width: 45vw;
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+.Main .Banner .Banner_list {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+  padding-left: 0;
+}
+
+.Main .Banner .Banner_list>li {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  transition: all .5s;
+}
+
+.Main .Banner .Banner_list>li>img {
+  width: 100%;
+  height: 100%;
+}
+
+.Main .Banner .Banner_list>li>button {
+  position: relative;
+  top: -30px;
+  left: -120px;
+  z-index: 1;
+  margin: 0 10px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-radius: 100%;
+  opacity: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  font-size: large;
+}
+
+.Main .Banner .Banner_list>li>button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.Main .Notable_project {
+  width: 45vw;
+  height: 70vh;
+}
+
+.Main .Notable_project .Notable_project_list {
+  padding: 0;
+}
+
+.Main .Notable_project .Notable_project_list>li {
+  list-style: none;
+  display: inline-block;
+  width: 166px;
+  height: 200px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.Main .Notable_project .Notable_project_list>li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.Main .Notable_project .Notable_project_list>li>img {
+  width: 100%;
+  height: 65%;
+
+}
+
+.Main .Notable_project .Notable_project_list>li>img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s;
+  box-shadow: 0px 0px 9px 3px rgb(222 221 221);
+}
+
+.Main .Notable_project .Notable_project_list>li>p {
+  display: inline;
+  font-size: x-small;
+  color: gray;
+}
+
+.Main .Notable_project .Notable_project_list>li>p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+aside {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.Main .Popular_Project {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Main .Popular_Project button {
+  color: gray;
+  background-color: white;
+  border-style: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+.Main .Popular_Project button:first-child {
+  color: black;
+  font-weight: 700;
+  font-size: large;
+}
+
+.Main .Popular_Project_time p {
+  margin-top: 0;
+  margin-left: 5px;
+  font-size: 10px;
+  color: gray;
+}
+
+.Main .Popular_Project_list {
+  padding: 0;
+}
+
+.Main .Popular_Project_list>li {
+  list-style: none;
+  height: 90px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Main .Popular_Project_list>li>img {
+  height: 100%;
+}
+
+.Main .Popular_Project_list>li>img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s;
+  box-shadow: 0px 0px 9px 3px rgb(222 221 221);
+}
+
+.Main .Popular_Project_list>li>h4 {
+  margin-top: 0;
+  color: red;
+}
+
+.Main .Popular_Project_list .Popular_Project_list_p {
+  width: 50%;
+  display: flex;
+  align-items: flex-start
+}
+
+.Main .Popular_Project_list .Popular_Project_list_p>p {
+  display: inline;
+  font-size: x-small;
+  color: gray;
+  margin-top: 0;
+}
+
+.Main .Popular_Project_list .Popular_Project_list_p>p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Main .View_All_Popular_Porject {
+  margin: 0 auto;
+  width: 70%;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 7px 0px rgb(222 221 221);
+  color: rgb(124, 123, 123);
+}
+
+.Main .View_All_Popular_Porject:hover {
+  background-color: rgb(238, 237, 237);
+}
+
+footer {
+  width: 100vw;
+  height: 30vh;
+  border-top: 1px solid rgb(230, 229, 229);
+  margin-bottom: 20px;
+}
+
+.Footer_menu {
+  width: 70%;
+  height: 60%;
+  margin: 10px auto;
+  border-bottom: 1px solid rgb(230, 229, 229);
+  display: flex;
+}
+
+.Footer_menu ul {
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_1>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_1>li>button {
+  width: 130px;
+  height: fit-content;
+  background-color: white;
+  color: gray;
+  border-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_2>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_2>li>button {
+  width: 130px;
+  height: fit-content;
+  background-color: white;
+  color: gray;
+  border-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_3>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_3>li>button {
+  width: 130px;
+  height: fit-content;
+  background-color: white;
+  color: gray;
+  border-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.Footer_menu .Footer_Menu_4>li {
+  list-style: none;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.Footer_menu .Footer_Menu_4>li>button {
+  width: 130px;
+  height: 30px;
+  background-color: rgb(246, 242, 242);
+  color: gray;
+  border-style: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0;
+}
+
+.Footer_menu ul li button:hover {
+  color: black;
+}
+
+.Footer_Tel {
+  width: 15%;
+  height: 100%;
+  margin-left: auto;
+  margin-top: 16px;
+}
+
+.Footer_Tel h4 {
+  margin: 0 auto;
+}
+
+.Footer_Tel p {
+  font-size: x-small;
+  color: gray;
+}
+
+.Footer_Tel button {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid rgb(208, 204, 204);
+  border-radius: 5px;
+}
+
+.Footer_Tel button:hover {
+  border-color: black;
+  transition: all 1s;
+}
+
+.Footer_information {
+  width: 70%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Footer_information .Footer_information_p {
+  font-size: small;
+  color: gray;
+}
+
+.Footer_information .Footer_information_SNS {
+  margin-left: auto;
+}
+
+.Footer_information .Footer_information_SNS button {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  color: gray;
+  border-style: solid;
+  border-color: rgb(219, 216, 216);
+  border-width: 1px;
+  border-radius: 100px;
+  margin-left: 5px;
+}
+
+.Footer_information .Footer_information_SNS button:hover {
+  border-color: black;
+  transition: all 1s;
+}
+
+.Agreement {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(235, 230, 230);
+}
+
+.Agreement p {
+  width: 70%;
+  margin: 10px auto;
+  font-size: 12px;
+  color: gray;
+}

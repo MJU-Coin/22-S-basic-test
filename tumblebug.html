@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tumblbug</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./images/logo.png">
+    <div class="login">로그인/회원가입</div>
+    <div class="project">프로젝트 올리기</div>
+  </header>
+  <nav>
+    <ul>
+      <li id="menu" onmouseenter="mouse_over()">카테고리</li>
+      <li>홈</li>
+      <li>인기</li>
+      <li>신규</li>
+      <li>마감임박</li>
+      <li>공개예정</li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="검색어를 입력해주세요.">
+    </div>
+  </nav>
+  <section>
+    <div class="banner">배너</div>
+    <div class="notableProject">주목할 만한 프로젝트</div>
+    <div class="notable" id="0">
+      <a href="https://tumblbug.com/better">
+      <img class="notablePics" src="./images/notable_project1.jpg" 
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">디자인 문구</div>
+      <div class="creator">Wearingeul(글입다)</div>
+      <div class="title">악필은 고칠 수 있어. 그것도 매우 쉽게! 글씨 교정 노트</div>
+      <div class="sponsorship_rate">1717% 달성</div>
+    </div>
+    <div class="notable" id="1">
+      <a href="https://tumblbug.com/wananaudio1">
+      <img class="notablePics" src="./images/notable_project2.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">웹툰·만화</div>
+      <div class="creator">네이버웹툰</div>
+      <div class="title">스타급 성우진과 함께 하는 <집이 없어> 오디오웹툰 시즌1</div>
+      <div class="sponsorship_rate">152% 달성</div>
+    </div>
+    <div class="notable" id="2">
+      <a href="https://tumblbug.com/untuna">
+      <img class="notablePics" src="./images/notable_project3.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">푸드</div>
+      <div class="creator">UNFISK109</div>
+      <div class="title">참치 아니었어? 식물성참치 UNTUNA! 이제는 대체참치다</div>
+      <div class="sponsorship_rate">1723% 달성</div>
+    </div>
+    <div class="notable" id="3">
+      <a href="https://tumblbug.com/deliverykore">
+      <img class="notablePics" src="./images/notable_project5.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">디지털 게임</div>
+      <div class="creator">나라이엔씨</div>
+      <div class="title">세상으로 생명을 배달하는 [숲 속의 배달부]</div>
+      <div class="sponsorship_rate">113% 달성</div>
+    </div>
+    <div class="notable" id="4">
+      <a href="https://tumblbug.com/cablecutter">
+      <img class="notablePics" src="./images/notable_project4.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">테크·가전</div>
+      <div class="creator">주식회사 하만</div>
+      <div class="title">감성까지 충전하는 다재다능한 5 in 1 충전기 C.C</div>
+      <div class="sponsorship_rate">113% 달성</div>
+    </div>
+    <div class="notable" id="5">
+      <a href="https://tumblbug.com/missingdreams">
+      <img class="notablePics" src="./images/notable_project6.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">웹툰·만화</div>
+      <div class="creator">박인주</div>
+      <div class="title">귀신들의 소망을 그린 만화 [꿈의 유실물]</div>
+      <div class="sponsorship_rate">299% 달성</div>
+    </div>
+    <div class="notable" id="6">
+      <a href="https://tumblbug.com/suitte7">
+      <img class="notablePics" src="./images/notable_project7.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">주얼리</div>
+      <div class="creator">SUITTE(수티)</div>
+      <div class="title">자연이 만든 아름다운 모양, 조약돌처럼 귀여운 향수목걸이</div>
+      <div class="sponsorship_rate">1463% 달성</div>
+    </div>
+    <div class="notable" id="7">
+      <a href="https://tumblbug.com/magazine_focus">
+      <img class="notablePics" src="./images/notable_project8.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="category">출판</div>
+      <div class="creator">초점, magazine focus</div>
+      <div class="title">한강을 제대로 즐기고 싶다면, <한강의 대교></div>
+      <div class="sponsorship_rate">134% 달성</div>
+    </div>
+  </section>
+  <aside>
+    <div class="popularProject">인기 프로젝트</div>
+    <div class="viewAll">전체보기</div>
+    <div id="clock" onload="clock()"></div>
+    <div class="popular">
+      <a href="https://tumblbug.com/xylocubesummer">
+      <img class="popularPics" src="./images/popular_project2.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class= "topRank">1</div>
+      <div class="popularBox">
+        <div class="category">푸드</div>
+        <div class="creator">mintea</div>
+        <div class="popularTitle">입에서 굴릴수록 치아가 건강해지는 마법의 사탕, 자일로큐브</div>
+        <div class="sponsorship_rate">12202% 달성</div>
+      </div>
+  </div>  
+   <div class="popular">
+    <a href="https://tumblbug.com/rosethic">
+      <img class="popularPics" src="./images/popular_project1.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class= "topRank">2</div>
+      <div class="popularBox">
+        <div class="category">디자인</div>
+        <div class="creator">쥬나</div>
+        <div class="popularTitle">읽기 쉽고 화려한 '덕질 타로' [로제딕]</div>
+        <div class="sponsorship_rate">1154% 달성</div>
+      </div>
+   </div> 
+  <div class="popular">
+    <a href="https://tumblbug.com/it_terms">
+      <img class="popularPics" src="./images/popular_project3.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class= "topRank">3</div>
+      <div class="popularBox">
+        <div class="category">출판</div>
+        <div class="creator">그로스쿨</div>
+        <div class="popularTitle">이것만 알아도 대화가 통한다! IT/기획/개발/마케팅 용어</div>
+        <div class="sponsorship_rate">5873% 달성</div>
+      </div>
+  </div>    
+  <div class="popular">
+    <a href="https://tumblbug.com/perfumebar">
+      <img class="popularPics" src="./images/popular_project4.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="rank">4</div>
+      <div class="popularBox">
+          <div class="category">향수·뷰티</div>
+          <div class="creator">퍼퓸바</div>
+          <div class="popularTitle">[섹스 온 더 비치] 너의 사랑을 이뤄줄 은밀한 칵테일향기</div>
+          <div class="sponsorship_rate">458% 달성</div>
+      </div>
+  </div>  
+  <div class="popular">
+    <a href="https://tumblbug.com/ambrosia">
+      <img class="popularPics" src="./images/popular_project5.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="rank">5</div>
+      <div class="popularBox">
+          <div class="category">향수·뷰티</div>
+          <div class="creator">소아모</div>
+          <div class="popularTitle">넥타르와 함께 즐긴, 승도복숭아를 품은 '암브로시아 향수'</div>
+          <div class="sponsorship_rate">247% 달성</div>
+      </div>
+  </div>  
+  <div class="popular">
+    <a href="https://tumblbug.com/lefaytarot01">
+      <img class="popularPics" src="./images/popular_project6.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="rank">6</div>
+      <div class="popularBox">
+          <div class="category">향수·뷰티</div>
+          <div class="creator">닉스</div>
+          <div class="popularTitle">[타로 퍼퓸] 달콤한 라즈베리빛 & 잔잔한 바이올렛빛 사랑</div>
+          <div class="sponsorship_rate">322% 달성</div>
+      </div>
+  </div>  
+  <div class="popular">
+    <a href="https://tumblbug.com/platter_frill">
+      <img class="popularPics" src="./images/popular_project7.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="rank">7</div>
+      <div class="popularBox">
+          <div class="category">웹툰 리소스</div>
+          <div class="creator">팀 플래터</div>
+          <div class="popularTitle">2D처럼 자연스럽게! 그대로 쓰는 3D < 프릴&레이스 ></div>
+          <div class="sponsorship_rate">168% 달성</div>
+      </div> 
+  </div>      
+  <div class="popular">
+    <a href="https://tumblbug.com/dolongi">
+      <img class="popularPics" src="./images/popular_project8.jpg"
+      onmouseenter = "zoomIn(event)" onmouseleave = "zoomOut(event)"></a>
+      <div class="rank">8</div>
+      <div class="popularBox">
+          <div class="category">웹툰·만화</div>
+          <div class="creator">네이버웹툰</div>
+          <div class="popularTitle">네이버웹툰 <도롱이> 단행본 1-5권 세트 제작</div>
+          <div class="sponsorship_rate">1908% 달성</div>
+      </div>
+  </div>  
+  </aside>
+  <footer>
+  <div>
+    <ul class="linkBox">
+      <div class="linkTitle">텀블벅</div>
+      <li>공지사항</li>
+      <li>서비스 소개</li>
+      <li>채용</li>
+      <li>2021 연말결산</li>
+    </ul>
+    <ul class="linkBox">
+      <div class="linkTitle">이용 안내</div>
+      <li>헬프 센터</li>
+      <li>첫 후원 가이드</li>
+      <li>창작자 가이드</li>
+      <li>제휴·협력</li>
+    </ul>
+    <ul class="linkBox">
+      <div class="linkTitle">정책</div>
+      <li>이용약관</li>
+      <li>개인정보 처리방침</li>
+      <li>프로젝트 심사기준</li>
+    </ul>
+    <ul class="linkBox">
+      <div class="linkTitle">APP</div>
+      <li>안드로이드</li>
+      <li>ios</li>
+    </ul>
+    <ul class="customer">
+      <li class="support">고객지원</li>
+      <li class="callTime">평일 9:00 ~ 17:00 (12:00 ~14:00 제외)</li>
+      <li class="inquire">텀블러에 문의</li>
+    </ul>
+  </div>
+  </footer>
+  <script>
+    showDate();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin on web</title>
+    <link rel="stylesheet" href="coinonweb.css">
+    <script src="coinonweb.js"defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;900&family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@700;900&family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@500;700;900&family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@300;500;700;900&family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;500;700;900&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><img src="../assets/cow.tumblbug.png" class="tumble"></header>
+    <!-- 텀블이미지 -->
+    <nav>
+        <ul class="nav-container">
+            <li class="nav-item nav1"><a href="#" >카테고리</a></li>
+            <li class="nav-item nav2"><a href="#">홈</a></li>
+            <li class="nav-item nav3"><a href="#" >인기</a></li>
+            <li class="nav-item nav4"><a href="#">신규</a></li>
+            <li class="nav-item nav5"><a href="#">마감임박</a></li>
+            <li class="nav-item nav6"><a href="#">공개예정</a></li>
+            <li class="search"><input class="searchinput" type="text" placeholder="검색어를 입력해주세요"></li>
+        </ul>
+    </nav>
+    <!-- 카테고리 -->
+    <div id="main_s">
+        <div class="minput_div"><input type="text" id="main_input" placeholder="검색어를 입력해주세요"><span class="button_span"><button class="nots_button">X</button></span></div>
+        <div class="all_po_se">
+        <ul class="popularsearch">텀블벅 인기 검색어
+            <li class="popularitem item1">1 향수</li>
+            <li class="popularitem">2 타로</li>
+            <li class="popularitem">3 한복</li>
+            <li class="popularitem">4 센트라이브러리</li>
+            <li class="popularitem">5 화신귀한</li>
+        </ul>
+        <ul>
+            <li class="popularitem item6">6 인형</li>
+            <li class="popularitem">7 웹툰</li>
+            <li class="popularitem">8 타로카드</li>
+            <li class="popularitem">9 반지</li>
+            <li class="popularitem">10 스케치업</li>
+        </ul>
+    </div>
+    </div>
+    <!-- 검색창 -->
+    <div id="servemenu">
+        <ul id="serveul">
+        <li class="serveli"><img class="cateimg" src="../assets/stationary.svg">전체</li>
+        <li class="serveli"><img class="cateimg" src="../assets/design.svg">디자인문구</li>
+        <li class="serveli"><img class="cateimg" src="../assets/food.svg">푸드</li>
+        <li class="serveli"><img class="cateimg" src="../assets/publishing.svg">출판</li>
+        <li class="serveli"><img class="cateimg" src="../assets/film.svg">영화비디오</li>
+        <li class="serveli"><img class="cateimg" src="../assets/board.svg">보드게임tprg</li>
+        <li class="serveli"><img class="cateimg" src="../assets/charactor-goods.svg">캐릭터</li>
+        <li class="serveli"><img class="cateimg" src="../assets/perfumes-cosmetics.svg">향수</li>
+        <li class="serveli"><img class="cateimg" src="../assets/design.svg">디자인</li>
+        <li class="serveli"><img class="cateimg" src="../assets/digital-game.svg">디지털게임</li>
+        <li class="serveli"><img class="cateimg" src="../assets/home-living.svg">홈 티빙</li>
+        <li class="serveli"><img class="cateimg" src="../assets/performing-art.svg">의류</li>
+        <li class="serveli"><img class="cateimg" src="../assets/art.svg">예술</li>
+        <li class="serveli"><img class="cateimg" src="../assets/comics.svg">웹툰</li>
+        <li class="serveli"><img class="cateimg" src="../assets/tech-electronics.svg">테크</li>
+        <li class="serveli"><img class="cateimg" src="../assets/stationary.svg">잡화</li>
+        <li class="serveli"><img class="cateimg" src="../assets/photography.svg">사진</li>
+        <li class="serveli"><img class="cateimg" src="../assets/webtoon-resource.svg">웹툰리소스</li>
+        <li class="serveli"><img class="cateimg" src="../assets/pet.svg">반려동물</li>
+        <li class="serveli"><img class="cateimg" src="../assets/jewerly.svg">주얼리</li>
+        <li class="serveli"><img class="cateimg" src="../assets/music.svg">음악</li>
+        </ul>
+    </div>
+    <!-- 세부메뉴 -->
+    <!-- main article -->
+    <main id="main_article">
+        <!-- 메인메뉴 -->
+        <div id="main_menu">
+            <!-- 베너 -->
+            <div id="banner">
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li class="slideli" id="slide1">
+                            <a>
+                                <button  class="left" id="slide1left"> < </button>
+                                <div class="bannerw">영화 <벌새> 오픈 최초<br> LP 한정판</div><img  class="bannerimg"src="../assets/banner1.jpg">
+                                <button  class="right" id="slide1right"> > </button>
+                            </a>
+                        </li>
+                        <li class="slideli"  id="slide2">
+                            <a>
+                                <button  class="left" id="slide2left"> < </button>
+                                <div class="bannerw w2">실수로 쏟은 물에도<br>젖을 걱정 없는 노트 </div><img class="bannerimg"src="../assets/banner2.jpg">
+                                <button  class="right" id="slide2right"> > </button>
+                            </a>
+                        </li>
+                        <li class="slideli"  id="slide3">
+                            <a>
+                                <button  class="left" id="slide3left"> < </button>
+                                <div class="bannerw w2" >눈 깜빡하면 완성<br>뚝딱 만드는 밀키트</div><img class="bannerimg"src="../assets/banner3.jpg">
+                                <button  class="right" id="slide3right"> > </button>
+                            </a>
+                        </li>
+                        <li class="slideli"  id="slide4" >
+                            <a>
+                                <button  class="left" id="slide4left"> < </button>
+                                <div class="bannerw w2" >웹툰 이미지 슬라이드서로<br>간편하게 자르자</div><img class="bannerimg"src="../assets/banner4.jpg">
+                                <button  class="right" id="slide4right"> > </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="notable_project">
+                <div id="np_title"> 주목할만한 프로젝트 </div>
+                <div class="np_div">
+                    <ul class="np_ul">
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project1.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">디자인 문구</span> <span class="np_crea">wearingeul(글입다)</span>
+                                </div>
+                                <div class="np_me"> 악필은 고칠 수 있어 그것도 매우 쉽게! 글씨 교정 노트
+                                </div>
+                                <div class="np_p">1717%달성</div>
+                            </div>
+                        </li>
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project2.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">웹툰 만화</span><span class="np_crea">네이버 웹툰</span>
+                                </div>
+                                <div class="np_me">스타급 성우진과 함께 하는 <집이 없어> 오디오 웹툰 시즌1
+                                </div>
+                                <div class="np_p">152%달성</div>
+                            </div>
+                        </li>
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project3.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">푸드</span><span class="np_crea">UNFISK109</span>
+                                </div>
+                                <div class="np_me"> 참치 아니었어? 식물성참치 UNTUNA! 이제는 대체 참치다
+                                </div>
+                                <div class="np_p">1723%달성</div>
+                            </div>
+                        </li>
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project4.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">디지털 게임</span><span class="np_crea">나라이엔씨</span>
+                                </div>
+                                <div class="np_me">세상으로 생명을 배달하는 [숲 속의 배달부]
+                                </div>
+                                <div class="np_p">113%달성</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="np_ul">
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project5.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">테크 가전</span><span class="np_crea">주식회사 하만</span>
+                                </div>
+                                <div class="np_me">감성까지 충전하는 다재다능한 5 in 1 충전기 C.C
+                                </div>
+                                <div class="np_p">34%달성</div>
+                            </div>
+                        </li>
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project6.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">웹툰 만화</span><span class="np_crea">박인주</span>
+                                </div>
+                                <div class="np_me">귀신들의 소망을 그린 만화 [꿈의 유실물]
+                                </div>
+                                <div class="np_p">299%달성</div>
+                            </div>
+                        </li>
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project7.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">주얼리</span><span class="np_crea">SUITTE(수티)</span>
+                                </div>
+                                <div class="np_me">자연이 만든 아름다운 모양, 조약돌처럼 귀여운 향수목걸이
+                                </div>
+                                <div class="np_p">1463% 달성</div>
+                            </div>
+                        </li>
+                        <li class="np_li">
+                            <img class="np_img" src="../assets/notable_project8.jpg">
+                            <div class="np_e">
+                                <div class="np_se"><span class="np_cate">출판</span><span class="np_crea">초점 , magazine focus</span>
+                                </div>
+                                <div class="np_me">한강을 제대로 즐기고 싶다면 , <한강의 대교>
+                                </div>
+                                <div class="np_p"> 134%달성</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 사이드바 -->
+        <div id="side_bar">
+                        <!-- 인기 프로젝트 제목 -->
+            <div id="popular_title">
+                <span id="p_title_b"><a id="a1" href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing">인기 프로젝트</a></span>
+                <span id="p_title_m"><a id="a2" href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing">전체보기</a></span>
+            </div>
+            <!-- 인기프로젝트 -->
+            <ul id="popular_project_ul">
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project1.jpg" >
+                    <div class="p_project_num">1</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">디자인</span> <span class="p_creator">쥬나</span></div>
+                        <div class="p_project_me">읽기 쉽고 화려한 '덕질 타로' [로제딕]</div>
+                        <div class="p_project_p">1148% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project2.jpg">
+                    <div class="p_project_num">2</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">푸드</span> <span class="p_creator">민티</span></div>
+                        <div class="p_project_me">입에서 굴릴수록 치아가 건강해지는 마법..</div>
+                        <div class="p_project_p">12202% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project3.jpg">
+                    <div class="p_project_num">3</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">출판</span> <span class="p_creator">그롯스쿨</span></div>
+                        <div class="p_project_me">그만 알아도 대화가 통! IT/기획/개발/..</div>
+                        <div class="p_project_p">5873% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project4.jpg">
+                    <div class="p_project_num">4</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">웹툰 리소스</span> <span class="p_creator">팀 플래터</span></div>
+                        <div class="p_project_me">2D처럼 자연스럽게!그대로 쓰는 3D</div>
+                        <div class="p_project_p">342% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project5.jpg">
+                    <div class="p_project_num">5</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">향수 뷰티</span> <span class="p_creator">닉스 NYX</span></div>
+                        <div class="p_project_me">[타로 퍼퓸] 달콤한 라즈베리빛 & 잔잔한</div>
+                        <div class="p_project_p">322% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project6.jpg">
+                    <div class="p_project_num">6</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">향수 뷰티</span> <span class="p_creator">소아모</span></div>
+                        <div class="p_project_me">넥타르와 함께 즐긴, 승도복숭아를 품은..</div>
+                        <div class="p_project_p">243% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project" >
+                    <img class="p_projectimg" src="../assets/cow_popular_project7.jpg">
+                    <div class="p_project_num">7</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">웹툰 만화</span> <span class="p_creator">네이버 웹툰</span></div>
+                        <div class="p_project_me">네이버웹툰 '도롱이' 단행본 1-5권 세트..</div>
+                        <div class="p_project_p">1879% 달성</div>
+                    </div>
+                </li>
+                <li class="popular_project">
+                    <img class="p_projectimg" src="../assets/cow_popular_project8.jpg">
+                    <div class="p_project_num">8</div>
+                    <div class="p_project_e">
+                        <div class="p_project_se"><span class="p_category">향수 뷰티</span> <span class="p_creator">에스 S</span></div>
+                        <div class="p_project_me">[솝오르] 라벤더가 전하는 보라빛 비누향</div>
+                        <div class="p_project_p">1134% 달성</div>
+                    </div>
+                </li>
+            </ul>
+            <div id="pp_bottom"><a  id="a3"href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing">인기 프로젝트 전체보기</a></div>
+        </div>
+    </main>
+</body>
+</html>

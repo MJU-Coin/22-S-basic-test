@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tumblbugclonecoding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54d588a27c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <div class="pageView">
+    <nav class="NavBar">
+      <div class="HeaderWrapper">
+        <div class="navbarLogo">
+          <img src="images/logo.png" width="140" height="36">
+        </div>
+        <div class="navbar_contents"> 
+            <ul class="navbar_things">
+              <div class="navbar_category">
+                <i class="fa-solid fa-bars"></i>
+                <a href="">카테고리</a>
+              </div>
+              <li><a href="#">홈</a></li>
+              <li><a href="#">인기</a></li>
+              <li><a href="#">신규</a></li>
+              <li><a href="#">마감임박</a></li>
+              <li><a href="#">공개예정</a></li>
+            </ul>
+          <div class="navbar_searchTool">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+            <div class="inputicon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="mainContainer">
+        <section id="Leftcontents">
+          <article id="banner">
+          </article>
+          <h3>주목할 만한 프로젝트</h3>
+          <article id="noteableProjects">
+            
+          </article>
+        </section>
+        <section id ="Rightcontents">
+          <div id="toppop">
+            <a href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing" id="pp">인기 프로젝트</a>
+            <a href="https://tumblbug.com/discover?sort=popular&ongoing=onGoing" id="lookAll">전체보기</a>
+          </div>
+          <div>
+            <div id="clock" onload="getTime()"></div>
+          </div>
+          <aside id="popularProjects">
+          </aside>
+          <div class="buttonContainer">
+          <button type="button" onclick="location.href='https:/\\/tumblbug.com/discover?sort=popular&ongoing=onGoing'">인기 프로젝트 전체보기</button>
+        </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footerWrapper">
+        <div class="footertop">
+          <div class="footercontents">
+            <ul class="contents">
+              <h3>텀블벅</h3>
+              <li>공지사항</li>
+              <li>서비스 소개</li>
+              <li>채용</li>
+              <li>2021 연말결산</li>
+            </ul>
+            <ul class="contents">
+              <h3>이용안내</h3>
+              <li>헬프 센터</li>
+              <li>첫 후원 가이드</li>
+              <li>창작자 가이드</li>
+              <li>제휴 협력</li>
+            </ul>
+            <ul class="contents">
+              <h3>정책</h3>
+              <li>이용약관</li>
+              <li>개인정보 처리방침</li>
+              <li>프로젝트 심사 기준</li>
+            </ul>
+            <ul class="contents">
+              <h3>App</h3>
+              <button></button>
+              <button></button>
+            </ul>
+          </div>
+        </div>
+        <div class="footerbot">
+          <div class="footerinfo">
+            <div id="tumblinfo">
+
+            </div>
+            <div id="footericons">
+
+            </div>
+          </div>
+          <div class="footernotice">
+            <p>텀블벅은 플랫폼 제공자로서 프로젝트의 당사자가 아니며, 직접적인 통신판매를 진행하지 않습니다. 프로젝트의 완수 및 선물제공의 책임은 해당 프로젝트의 창작자에게 있으며, 
+              프로젝트와 관련하여 후원자와 발생하는 법적 분쟁에 대한 책임은 해당 창작자가 부담합니다.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

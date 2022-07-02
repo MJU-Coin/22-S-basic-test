@@ -380,6 +380,11 @@ main {
     height: 100%;
 }
 
+.N_ImageWrapper img:hover {
+    width: 105%;
+    height: 105%;
+}
+
 .N_InfoWrapper {
     position: bottom;
 }

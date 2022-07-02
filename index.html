@@ -9,7 +9,11 @@
     <script src="https://kit.fontawesome.com/54d588a27c.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
+<body>    
+  <section class="searchPage">
+  <input type="text" id="searchtext">
+  <button id="closeSearch" onclick="return closesearch()"><i class="fa-regular fa-x"></i></button>
+  </section>
   <div class="pageView">
     <nav class="NavBar">
       <div class="HeaderWrapper">
@@ -29,7 +33,7 @@
               <li><a href="#">공개예정</a></li>
             </ul>
           <div class="navbar_searchTool">
-            <input type="text" placeholder="검색어를 입력해주세요.">
+            <input type="text" placeholder="검색어를 입력해주세요." id="mainsearch" onclick="return opensearch()">
             <div class="inputicon">
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -37,7 +41,6 @@
         </div>
       </div>
     </nav>
-
     <main>
       <div class="mainContainer">
         <section id="Leftcontents">
@@ -88,7 +91,7 @@
               <li>개인정보 처리방침</li>
               <li>프로젝트 심사 기준</li>
             </ul>
-            <ul class="contents">
+            <ul class="contents" id="apps">
               <h3>App</h3>
               <button><i class="fa-brands fa-google-play"></i> 안드로이드</button>
               <button><i class="fa-brands fa-apple"></i> IOS</button>
@@ -102,7 +105,6 @@
             </button>
           </div>
         </div>
-        <div class="line"></div>
         <div class="footerbot">
           <div class="footerinfo">
             <div id="tumblinfo">
@@ -130,9 +132,9 @@
             </div>
           </div>
           <div class="footernotice">
-            <p>텀블벅은 플랫폼 제공자로서 프로젝트의 당사자가 아니며, 직접적인 통신판매를 진행하지 않습니다. 프로젝트의 완수 및 선물제공의 책임은 해당 프로젝트의 창작자에게 있으며, 
-              프로젝트와 관련하여 후원자와 발생하는 법적 분쟁에 대한 책임은 해당 창작자가 부담합니다.</p>
-          </div>
+        <p>텀블벅은 플랫폼 제공자로서 프로젝트의 당사자가 아니며, 직접적인 통신판매를 진행하지 않습니다. 프로젝트의 완수 및 선물제공의 책임은 해당 프로젝트의 창작자에게 있으며, 
+          프로젝트와 관련하여 후원자와 발생하는 법적 분쟁에 대한 책임은 해당 창작자가 부담합니다.</p>
+      </div>
         </div>
       </div>
     

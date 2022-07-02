@@ -1,3 +1,16 @@
+const searchPage = document.querySelector('.searchPage')
+const mainPage = document.querySelector('.pageView')
+
+function opensearch(){
+  searchPage.style.display = "flex";
+  mainPage.style.display = 'none';
+}
+
+function closesearch(){
+  searchPage.style.display = "none"
+  mainPage.style.display = '';
+}
+
 function getTime(){
   var date = new Date()
   var Y = date.getFullYear();

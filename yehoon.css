@@ -1,0 +1,51 @@
+.logo-size {height: 36px;
+width: 140px;
+}
+.nav {display: inline-block;
+margin-left: 20px;
+margin-top: 15px;
+}
+.category{display: inline-block;
+  margin-left: 170px;
+  margin-top: 20px;
+}
+.header {
+  padding: 16px;
+}
+.header-top {
+  display: flex;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 170px;
+}
+.header-aside {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+}
+.upload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-style: none;
+}
+
+.login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-style: inset;
+  border-color: rgb(163, 159, 159);
+  border-width: 1px;
+a {
+text-decoration: none;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
